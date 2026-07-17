@@ -1832,17 +1832,11 @@ new AwesomeMenu(".breakdance .bde-menu-236-119 .breakdance-menu", {
 });
  }) </script>
 <script>document.addEventListener('DOMContentLoaded', function(){ breakdanceForm.init('.breakdance .bde-form-builder-235-174 .breakdance-form') }) </script>
-    
-<script>/* LE preview shim: static look-only export, form submit is disabled */
-document.addEventListener('submit', function(e){
-  var f = e.target.closest('.breakdance-form, form'); if(!f) return;
-  e.preventDefault(); e.stopPropagation();
-  var n = f.querySelector('.le-preview-note');
-  if(!n){ n=document.createElement('div'); n.className='le-preview-note';
-    n.style.cssText='margin-top:12px;padding:12px 14px;border-radius:10px;background:rgba(242,180,10,.14);color:#F2B40A;font:600 13.5px/1.4 system-ui,sans-serif';
-    n.textContent='Design preview \u2014 the live form will submit to AHEAD\u2019s system on launch.'; f.appendChild(n);} 
-}, true);
-</script>
-</body>
+    <script>/* LE preview shim: static look-only, form submit disabled */
+document.addEventListener('submit',function(e){var f=e.target.closest('.breakdance-form, form');if(!f)return;
+e.preventDefault();e.stopPropagation();var n=f.querySelector('.le-preview-note');if(!n){n=document.createElement('div');
+n.className='le-preview-note';n.style.cssText='margin-top:12px;padding:12px 14px;border-radius:10px;background:rgba(242,180,10,.14);color:#F2B40A;font:600 13.5px/1.4 system-ui,sans-serif';
+n.textContent='Design preview \u2014 the live form will submit to AHEAD\u2019s system on launch.';f.appendChild(n);}},true);
+</script></body>
 
     </html>
